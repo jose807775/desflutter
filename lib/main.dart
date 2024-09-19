@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_word_app/presentation/screens/counter/counter_screen.dart';
 
 main () {
   
@@ -6,6 +7,7 @@ main () {
 }
 
 class MyApp extends StatelessWidget {
+  
   const MyApp({super.key});
 
   @override
@@ -13,10 +15,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      home: Scaffold(
-        body: Center(child: Text( 'hola mundo2' )),
-      )
+      home: CounterScreen()
     );
   }
-
 }
